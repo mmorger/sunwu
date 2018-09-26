@@ -1,0 +1,368 @@
+/*
+ *  Header section (navigation)
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@burger-icon-bar-offset: 6px;
+
+
+// Mixins
+// -------------------------
+
+
+
+// Main settings
+// -------------------------
+//body.navbar-is-fixed-top {
+//  padding-top: 110px !important;
+//
+//  &.admin-menu {
+//    padding-top: 110px !important;
+//  }
+//
+//}
+
+header#navbar {
+  background: @pxl-color-header;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+  border: none;
+  border-radius: 0;
+
+  //.container, .container-fluid {
+  //  padding: 20px @grid-gutter-width / 2;
+  //}
+
+  .navbar-header {
+    position: absolute;
+    margin: 0;
+    top: 3rem;
+    width: 100%;
+    z-index: 102;
+
+    @media @normal {
+      top: 5rem;
+    }
+
+    #block-pixelgarage-branding {
+      position: absolute;
+      margin-left: 1rem;
+
+      img.logo {
+        width: 50vw;
+
+        @media @tablet {
+          margin-left: 5rem;
+          width: 20vw;
+        }
+        @media @normal {
+          margin-left: 5rem;
+          width: 30vw;
+          max-width: 30rem;
+          //max-height: 50vh;
+        }
+      }
+    }
+
+    .navbar-toggle {
+      // navbar toggle with burger
+      position: fixed;
+      margin: 0;
+      padding: 0 10px 10px;
+      border: none;
+      right: 2rem;
+      z-index: 777;
+
+      @media @tablet {
+        display: block;
+      }
+      @media @normal {
+        display: none;
+      }
+
+      &:hover, &:focus, &.active {
+        background-color: transparent;
+      }
+      .icon-bar {
+        width: 24px;
+        height: 1px;
+        transition: all .3s;
+        -webkit-transform: translateY(0px) rotate(0deg);
+        -ms-transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
+        + .icon-bar {
+          margin-top: 5px;
+        }
+      }
+      &[aria-expanded='true'] {
+        .icon-bar {
+          position: relative;
+          //top: -7px;
+          &.first {
+            -webkit-transform: translateY(@burger-icon-bar-offset) rotate(45deg);
+            -ms-transform: translateY(@burger-icon-bar-offset) rotate(45deg);
+            transform: translateY(@burger-icon-bar-offset) rotate(45deg);
+          }
+          &.second {
+            opacity: 0;
+          }
+          &.third {
+            -webkit-transform: translateY(-@burger-icon-bar-offset) rotate(-45deg);
+            -ms-transform: translateY(-@burger-icon-bar-offset) rotate(-45deg);
+            transform: translateY(-@burger-icon-bar-offset) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  // collapse part
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    height: 0; //100vh;
+    background-color: @pxl-color-body-bg;
+    border: none;
+    box-shadow: none;
+    z-index: 111;
+    opacity: 0;
+    #pxl-mixins.transition(opacity 0.3s ease-in-out);
+    #pxl-mixins.transition(height 0s);
+
+    &.collapse {
+      display: block !important;
+      //height: 100vh !important;
+    }
+    &.collapsing {
+      display: block !important;
+      //height: 100vh !important;
+    }
+    &[aria-expanded='true'] {
+      opacity: 1;
+      height: 100vh !important;
+      nav {
+        display: block;
+      }
+    }
+
+    // main menu
+    nav {
+      display: none;
+      padding-top: 50px;
+      text-align: center;
+
+      ul.navbar-nav {
+        margin: 0;
+        width: 100%;
+
+        li {
+          float: none;
+
+          a {
+            #pxl-mixins.navigation();
+          }
+        }
+      }
+    }
+    @media @tablet {
+
+    }
+
+    @media @normal {
+      display: block;
+      position: fixed;
+      top: 0;
+      //margin-left: 5rem;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      opacity: 1;
+      background-color: transparent;
+      #pxl-mixins.transition(all 0.3s ease-in-out);
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 140px;
+        height: 60px;
+        background: center left no-repeat url(../images/SUN-WU-Logo-minimal.png);
+        background-size: contain;
+        opacity: 0;
+      }
+
+      &.nav-solid {
+        background-color: @pxl-color-body-bg;
+        &:before {
+          opacity: 1;
+        }
+      }
+
+      // main menu
+      nav {
+        display: block;
+        padding-top: 0;
+        text-align: left;
+
+        ul.navbar-nav {
+          margin: 0;
+          //position: fixed;
+          padding: 0 25px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          max-width: 1600px;
+          height: 60px;
+          background-color: transparent;
+          #pxl-mixins.flexbox();
+          justify-content: flex-end;
+          align-items: center;
+
+          li {
+            float: none;
+
+            a {
+              padding: 15px;
+              #pxl-mixins.transition(color 0.1s ease-in-out);
+
+              &:hover {
+                &:not(.is-active) {
+                  color: @pxl-color-dark-red;
+                }
+              }
+              &.is-active {
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 1600px) {
+      max-width: 1400px;
+    }
+    /*
+    @media @normal {
+
+      nav {
+        ul.navbar-nav {
+          position: fixed;
+          padding: 0 25px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 50px;
+          background-color: black;
+          #pxl-mixins.flexbox();
+          justify-content: flex-end;
+          align-items: center;
+
+          li {
+
+
+            a {
+              padding: 15px;
+
+
+
+              &:hover {
+                opacity: 0.6;
+                text-decoration: @link-decoration-hover;
+                background: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+    */
+
+  }
+  // Header Background Image
+  // Header Height S
+  .header-background {
+    height: 50vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    background-attachment: scroll;
+
+    @media @tablet {
+      max-height: 350px;
+    }
+    @media @normal {
+      max-height: 450px;
+    }
+  }
+}
+// Header Background Image contextual
+body {
+  header#navbar {
+    .header-background {
+      position: relative;
+      overflow: hidden;
+      z-index: 101;
+      background-color: black;
+      &:after {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 60px;
+        content: '';
+        background: top center no-repeat url(../images/Textur_Header_BG_2.png);
+        background-size: cover;
+        @media @tablet {
+          height: 75px;
+        }
+        @media @normal {
+          height: 95px;
+        }
+      }
+      #bgvideo {
+        min-width: 100%;
+        min-height: 100%;
+        #pxl-mixins.center-horizontally();
+        #pxl-mixins.center-vertically(absolute);
+      }
+    }
+   }
+  // Header Height L
+  &.path-frontpage,
+  &.page-node-2,
+  &.page-node-3,
+  &.page-node-4 {
+    header#navbar {
+      .header-background {
+        position: relative;
+        overflow: hidden;
+        height: 90vh;
+
+        @media @normal {
+          //height: 90vh;
+          max-height: 70vh;
+        }
+      }
+    }
+  }
+  //// Header Height M
+  //&.path-kalender, &.page-node-11, &.page-node-type-news { // Kalender + Biografie
+  //  header#navbar {
+  //    .header-background {
+  //      height: 70vh;
+  //
+  //      @media @normal {
+  //        //height: 90vh;
+  //        max-height: 70vh;
+  //      }
+  //    }
+  //  }
+  //}
+}

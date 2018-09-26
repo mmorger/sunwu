@@ -1,0 +1,40 @@
+/**
+ * Hide <select> and submit-button
+ */
+#views-exposed-form-news-page-1 .form-type-select {
+  display: none;
+}
+#views-exposed-form-news-page-1 .form-submit {
+  display: none;
+}
+
+/**
+ * Pure styling, should probably be put in your theme stylesheet
+ * instead of in this module
+ */
+.links-list {
+  padding-left: 0;
+  list-style-type: none;
+  //#pxl-mixins.flexbox(wrap; center;);
+
+  li {
+    a {
+      #pxl-mixins.navigation();
+      margin: 10px;
+      color: @pxl-color-grayblue;
+      font-size: 13px;
+      font-weight: 400;
+      &.active {
+        color: @pxl-color-active;
+        font-weight: 600;
+        border-bottom: 1px solid @pxl-color-active;
+      }
+      @media @normal {
+        margin: 15px;
+        &:hover {
+          border-bottom: 1px solid @pxl-color-grayblue;
+        }
+      }
+    }
+  }
+}

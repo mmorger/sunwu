@@ -1,0 +1,36 @@
+/*
+ *  Buttons component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+// General settings
+// -------------------------
+
+.field--name-field-anchor-id {
+  //#pxl-mixins.flexbox(wrap; center;);
+
+  .field--item {
+    a {
+      #pxl-mixins.navigation();
+      margin: 10px;
+      color: @pxl-color-active;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 3;
+      @media @normal {
+        margin: 15px;
+        line-height: 2;
+        &:hover {
+          border-bottom: 1px solid @pxl-color-active;
+        }
+      }
+    }
+  }
+}

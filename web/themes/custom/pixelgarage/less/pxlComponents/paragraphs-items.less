@@ -1,0 +1,41 @@
+/*
+ *  Text paragraph component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@einzug-t: 55px;
+@einzug-n: 125px;
+
+
+// Mixins
+// -------------------------
+
+
+// Component
+// -------------------------
+.paragraph:not(.paragraph--type--tag-plan) {
+
+  @media @tablet {
+    padding-left: 15px + @einzug-t;
+    padding-right: 15px + @einzug-t;
+  }
+  @media @normal {
+    padding-left: 15px + @einzug-n;
+    padding-right: 15px + @einzug-n;
+  }
+
+  .field--name-field-titel {
+    #pxl-mixins.resp-padding-bottom(20px);
+    #pxl-mixins.subtitle();
+    color: @title-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .field--name-field-images {
+    .field--item {
+      #pxl-mixins.resp-padding-bottom(35px);
+    }
+  }
+}

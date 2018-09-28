@@ -9,7 +9,7 @@
 // Mixins
 // -------------------------
 #pxl-mixins {
-  .btn(@m-top: 40px; @m-bottom: 40px; @bg: @pxl-color-active) {
+  .btn(@m-top: 40px; @m-bottom: 40px; @bg: @pxl-color-active; @hvr: black;) {
     #pxl-mixins.resp-margin-top(@m-top);
     #pxl-mixins.resp-margin-bottom(@m-bottom);
     margin-left: 12.5px;
@@ -28,12 +28,14 @@
     background-color: @bg;
     #pxl-mixins.transition(background-color 0.3s ease);
 
-    &:hover, &:focus {
-      text-decoration: none;
-      color: @pxl-color-main;
-      //background-color: @pxl-color-blue-1;
-      background-color: @pxl-color-active;
-      //opacity: 0.8;
+    @media @normal {
+      &:hover, &:focus {
+        text-decoration: none;
+        color: @pxl-color-main;
+        //background-color: @pxl-color-blue-1;
+        background-color: @hvr;
+        //opacity: 0.8;
+      }
     }
   }
 }

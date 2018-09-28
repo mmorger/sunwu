@@ -9,7 +9,7 @@
  * Implements hook_form_alter().
  */
 function views_filter_buttons_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  $view_names = array('news');
+  $view_names = array('aktuell');
   $view = $form_state->getStorage('view');
   if ($form_id == 'views_exposed_form' && in_array($view['view']->id(), $view_names)) {
 

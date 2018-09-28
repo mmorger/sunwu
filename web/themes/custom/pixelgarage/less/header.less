@@ -163,6 +163,12 @@ header#navbar {
 
         li {
           float: none;
+          &.active {
+            a {
+              color: @pxl-color-active;
+              background: none;
+            }
+          }
 
           a {
             #pxl-mixins.navigation();
@@ -225,6 +231,8 @@ header#navbar {
 
           li {
             float: none;
+
+            &.active {}
 
             a {
               padding: 15px;

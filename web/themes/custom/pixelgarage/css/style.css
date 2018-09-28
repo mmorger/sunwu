@@ -9931,21 +9931,27 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /**
  * Hide <select> and submit-button
  */
-#views-exposed-form-news-page-1 .form-type-select {
+#views-exposed-form-aktuell-block-2 .form-type-select {
   display: none;
 }
-#views-exposed-form-news-page-1 .form-submit {
+#views-exposed-form-aktuell-block-2 .form-submit {
   display: none;
 }
 /**
  * Pure styling, should probably be put in your theme stylesheet
  * instead of in this module
  */
-.links-list {
+#views-exposed-form-aktuell-block-2 .links-list {
   padding-left: 0;
   list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
 }
-.links-list li a {
+#views-exposed-form-aktuell-block-2 .links-list li a {
   padding: 5px 0px;
   font-family: 'ProximaNovaBold';
   font-size: 15px;
@@ -9958,29 +9964,29 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-size: 13px;
   font-weight: 400;
 }
-.links-list li a.is-active {
+#views-exposed-form-aktuell-block-2 .links-list li a.is-active {
   color: #D40028;
   background: none;
 }
-.links-list li a:focus,
-.links-list li a .active {
+#views-exposed-form-aktuell-block-2 .links-list li a:focus,
+#views-exposed-form-aktuell-block-2 .links-list li a .active {
   background-color: transparent;
 }
 @media screen and (min-width: 64em) {
-  .links-list li a {
+  #views-exposed-form-aktuell-block-2 .links-list li a {
     line-height: 1;
   }
 }
-.links-list li a.active {
+#views-exposed-form-aktuell-block-2 .links-list li a.active {
   color: #D40028;
   font-weight: 600;
   border-bottom: 1px solid #D40028;
 }
 @media screen and (min-width: 64em) {
-  .links-list li a {
+  #views-exposed-form-aktuell-block-2 .links-list li a {
     margin: 15px;
   }
-  .links-list li a:hover {
+  #views-exposed-form-aktuell-block-2 .links-list li a:hover {
     border-bottom: 1px solid #8b9997;
   }
 }
@@ -10063,38 +10069,38 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /*
  *  Node page component
  * --------------------------------------------------*/
-.path-node .container .row .layout,
-.path-frontpage .container .row .layout {
-  margin-bottom: 37.5px;
+.path-node .container .row .region-content > .layout,
+.path-frontpage .container .row .region-content > .layout {
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout,
-  .path-frontpage .container .row .layout {
-    margin-bottom: 56.25px;
+  .path-node .container .row .region-content > .layout,
+  .path-frontpage .container .row .region-content > .layout {
+    margin-bottom: 37.5px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout,
-  .path-frontpage .container .row .layout {
-    margin-bottom: 75px;
+  .path-node .container .row .region-content > .layout,
+  .path-frontpage .container .row .region-content > .layout {
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout,
-  .path-frontpage .container .row .layout {
-    margin-bottom: 93.75px;
+  .path-node .container .row .region-content > .layout,
+  .path-frontpage .container .row .region-content > .layout {
+    margin-bottom: 62.5px;
   }
 }
-.path-node .container .row .layout .layout__region--content > .field:not(.field--name-field-image-carousel),
-.path-frontpage .container .row .layout .layout__region--content > .field:not(.field--name-field-image-carousel) {
+.path-node .container .row .region-content > .layout .layout__region--content > .field:not(.field--name-field-image-carousel),
+.path-frontpage .container .row .region-content > .layout .layout__region--content > .field:not(.field--name-field-image-carousel) {
   margin-left: auto;
   margin-right: auto;
   max-width: 970px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-.path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
   padding-left: 15px;
   padding-right: 15px;
   font-family: 'urwg', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10109,61 +10115,61 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   color: black;
 }
 @media screen and (min-width: 35.61290322580645em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     font-size: 8.07291667vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     font-size: 62px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     font-size: 76px;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     padding-top: 15px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     padding-top: 20px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     padding-top: 25px;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     padding-bottom: 15px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-node-title h1,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-node-title h1 {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-node-title h1,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-node-title h1 {
     padding-bottom: 25px;
   }
 }
-.path-node .container .row .layout .layout__region--content > .field--name-field-lead,
-.path-frontpage .container .row .layout .layout__region--content > .field--name-field-lead {
+.path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-lead,
+.path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-lead {
   padding-left: 15px;
   padding-right: 15px;
   font-family: 'ProximaNovaRegular', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10175,155 +10181,155 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   padding-bottom: 20px;
 }
 @media screen and (min-width: 43.2em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-lead,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-lead {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-lead,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-lead {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-lead,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-lead {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-lead,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-lead {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-lead,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-lead {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-lead,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-lead {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-lead,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-lead {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-lead,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-lead {
     padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-lead,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-lead {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-lead,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-lead {
     padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-lead,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-lead {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-lead,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-lead {
     padding-bottom: 50px;
   }
 }
-.path-node .container .row .layout .layout__region--content > .field--name-field-image-carousel,
-.path-frontpage .container .row .layout .layout__region--content > .field--name-field-image-carousel {
+.path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel,
+.path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel {
   margin-bottom: 37.5px;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-image-carousel,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-image-carousel {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel {
     margin-bottom: 56.25px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-image-carousel,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-image-carousel {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel {
     margin-bottom: 75px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content > .field--name-field-image-carousel,
-  .path-frontpage .container .row .layout .layout__region--content > .field--name-field-image-carousel {
+  .path-node .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content > .field--name-field-image-carousel {
     margin-bottom: 93.75px;
   }
 }
-.path-node .container .row .layout .layout__region--content .field--name-body p img,
-.path-frontpage .container .row .layout .layout__region--content .field--name-body p img,
-.path-node .container .row .layout .layout__region--content .paragraph p img,
-.path-frontpage .container .row .layout .layout__region--content .paragraph p img {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+.path-node .container .row .region-content > .layout .layout__region--content .paragraph p img,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph p img {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body p img,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body p img,
-  .path-node .container .row .layout .layout__region--content .paragraph p img,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph p img {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph p img {
     margin-top: 30px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body p img,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body p img,
-  .path-node .container .row .layout .layout__region--content .paragraph p img,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph p img {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph p img {
     margin-top: 40px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body p img,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body p img,
-  .path-node .container .row .layout .layout__region--content .paragraph p img,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph p img {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph p img {
     margin-top: 50px;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body p img,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body p img,
-  .path-node .container .row .layout .layout__region--content .paragraph p img,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph p img {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph p img {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body p img,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body p img,
-  .path-node .container .row .layout .layout__region--content .paragraph p img,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph p img {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph p img {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body p img,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body p img,
-  .path-node .container .row .layout .layout__region--content .paragraph p img,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph p img {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body p img,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph p img,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph p img {
     margin-bottom: 50px;
   }
 }
-.path-node .container .row .layout .layout__region--content .field--name-body table,
-.path-frontpage .container .row .layout .layout__region--content .field--name-body table,
-.path-node .container .row .layout .layout__region--content .paragraph table,
-.path-frontpage .container .row .layout .layout__region--content .paragraph table {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table,
+.path-node .container .row .region-content > .layout .layout__region--content .paragraph table,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table {
   margin-bottom: 37.5px;
   width: 100%;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body table,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body table,
-  .path-node .container .row .layout .layout__region--content .paragraph table,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph table {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body table,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph table,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table {
     margin-bottom: 56.25px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body table,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body table,
-  .path-node .container .row .layout .layout__region--content .paragraph table,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph table {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body table,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph table,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table {
     margin-bottom: 75px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body table,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body table,
-  .path-node .container .row .layout .layout__region--content .paragraph table,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph table {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body table,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph table,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table {
     margin-bottom: 93.75px;
   }
 }
-.path-node .container .row .layout .layout__region--content .field--name-body table tr,
-.path-frontpage .container .row .layout .layout__region--content .field--name-body table tr,
-.path-node .container .row .layout .layout__region--content .paragraph table tr,
-.path-frontpage .container .row .layout .layout__region--content .paragraph table tr {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
+.path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr {
   height: 50px;
   width: 100%;
   background: bottom left no-repeat url(../images/line_mobile.svg);
@@ -10331,24 +10337,24 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   background-position-x: -2px;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-body table tr,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-body table tr,
-  .path-node .container .row .layout .layout__region--content .paragraph table tr,
-  .path-frontpage .container .row .layout .layout__region--content .paragraph table tr {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr {
     background: bottom left no-repeat url(../images/line_normal.svg);
     background-size: 100%;
     background-position-x: -13px;
   }
 }
-.path-node .container .row .layout .layout__region--content .field--name-body table tr td,
-.path-frontpage .container .row .layout .layout__region--content .field--name-body table tr td,
-.path-node .container .row .layout .layout__region--content .paragraph table tr td,
-.path-frontpage .container .row .layout .layout__region--content .paragraph table tr td {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr td,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr td,
+.path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr td,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr td {
   padding-top: 10px;
   vertical-align: top;
 }
-.path-node .container .row .layout .layout__region--content .field--name-field-date,
-.path-frontpage .container .row .layout .layout__region--content .field--name-field-date {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-field-date,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-date {
   font-size: 14px;
   font-family: 'ProximaNovaRegular', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -10359,25 +10365,25 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-weight: normal;
 }
 @media screen and (min-width: 42em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-date,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-date {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-date,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-date {
     font-size: 2.08333333vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-date,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-date {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-date,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-date {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-date,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-date {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-date,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-date {
     font-size: 16px;
   }
 }
-.path-node .container .row .layout .layout__region--content .field--name-field-link,
-.path-frontpage .container .row .layout .layout__region--content .field--name-field-link {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-field-link,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-link {
   margin-top: 15px;
   display: -webkit-box;
   display: -moz-box;
@@ -10390,62 +10396,80 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   justify-content: center;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-link,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-link {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-link,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-link {
     margin-top: 22.5px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-link,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-link {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-link,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-link {
     margin-top: 30px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-link,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-link {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-link,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-link {
     margin-top: 37.5px;
   }
 }
-.path-node .container .row .layout .layout__region--content .field--name-field-video,
-.path-frontpage .container .row .layout .layout__region--content .field--name-field-video {
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-video,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-video {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
     margin-top: 15px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-video,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-video {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
     margin-top: 20px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-video,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-video {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
     margin-top: 25px;
   }
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-video,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-video {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
     margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 64em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-video,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-video {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 80em) {
-  .path-node .container .row .layout .layout__region--content .field--name-field-video,
-  .path-frontpage .container .row .layout .layout__region--content .field--name-field-video {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
     margin-bottom: 25px;
+  }
+}
+.page-node-17 .container .row .region-content > .layout {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 48em) {
+  .page-node-17 .container .row .region-content > .layout {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .page-node-17 .container .row .region-content > .layout {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 80em) {
+  .page-node-17 .container .row .region-content > .layout {
+    margin-bottom: 0px;
   }
 }
 /*
@@ -10740,12 +10764,12 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
 /*
  *  Node event component
  * --------------------------------------------------*/
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions {
   background-color: #ECE9E1;
   margin-bottom: 30px;
   padding: 1rem;
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions > .field--label {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions > .field--label {
   font-family: 'urwg', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 28px;
   letter-spacing: 0;
@@ -10758,27 +10782,27 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
   letter-spacing: 0.01em;
 }
 @media screen and (min-width: 39.529411764705884em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions > .field--label {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions > .field--label {
     font-size: 4.42708333vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions > .field--label {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions > .field--label {
     font-size: 34px;
   }
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions > .field--label {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions > .field--label {
     font-size: 45px;
   }
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan {
   padding-bottom: 25px;
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan > .field--name-field-titel {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan > .field--name-field-titel {
   font-family: 'ProximaNovaBold';
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan > .field--name-field-titel:after {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan > .field--name-field-titel:after {
   display: block;
   content: '';
   width: 100%;
@@ -10788,35 +10812,35 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
   background-position-x: -2px;
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan > .field--name-field-titel:after {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan > .field--name-field-titel:after {
     background: center left no-repeat url(../images/line_normal.svg);
     background-size: 100% 100%;
     background-position-x: -4px;
   }
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion {
   padding-bottom: 10px;
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-left {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-left {
   display: inline-block;
   vertical-align: top;
   width: 38%;
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-left {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-left {
     width: 140px;
   }
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right {
   display: inline-block;
   width: 60%;
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right {
     width: auto;
   }
 }
-.page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
   padding-bottom: 0px;
   font-family: 'ProximaNovaRegular', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -10829,32 +10853,32 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
   font-family: 'ProximaNovaBold';
 }
 @media screen and (min-width: 48em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 80em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-mainpage .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
     font-size: 19px;
   }
 }
@@ -11290,11 +11314,13 @@ form#user-login {
     font-size: 26px;
   }
 }
-#user_login_form_form .form-actions-wrapper .form-actions .btn:hover,
-#user_login_form_form .form-actions-wrapper .form-actions .btn:focus {
-  text-decoration: none;
-  color: #FBF8F4;
-  background-color: #D40028;
+@media screen and (min-width: 64em) {
+  #user_login_form_form .form-actions-wrapper .form-actions .btn:hover,
+  #user_login_form_form .form-actions-wrapper .form-actions .btn:focus {
+    text-decoration: none;
+    color: #FBF8F4;
+    background-color: black;
+  }
 }
 #user_login_form_form .form-actions-wrapper .login-password {
   display: inline-block;
@@ -11850,13 +11876,15 @@ form#user-login {
     font-size: 26px;
   }
 }
-#user-register-form .form-actions .btn:hover,
-#user-pass .form-actions .btn:hover,
-#user-register-form .form-actions .btn:focus,
-#user-pass .form-actions .btn:focus {
-  text-decoration: none;
-  color: #FBF8F4;
-  background-color: #D40028;
+@media screen and (min-width: 64em) {
+  #user-register-form .form-actions .btn:hover,
+  #user-pass .form-actions .btn:hover,
+  #user-register-form .form-actions .btn:focus,
+  #user-pass .form-actions .btn:focus {
+    text-decoration: none;
+    color: #FBF8F4;
+    background-color: black;
+  }
 }
 /*
  *  User profile component
@@ -12813,6 +12841,31 @@ form#user-profile-form div .form-actions .form-submit .icon {
 /*
  *  View component
  * --------------------------------------------------*/
+.view-angebot {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 970px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.view-angebot .row .col {
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 48em) {
+  .view-angebot .row .col {
+    padding-bottom: 37.5px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .view-angebot .row .col {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 80em) {
+  .view-angebot .row .col {
+    padding-bottom: 62.5px;
+  }
+}
 .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 {
   margin: 0;
   margin-top: -30px;
@@ -12892,11 +12945,13 @@ form#user-profile-form div .form-actions .form-submit .icon {
     font-size: 26px;
   }
 }
-.view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a:hover,
-.view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a:focus {
-  text-decoration: none;
-  color: #FBF8F4;
-  background-color: #D40028;
+@media screen and (min-width: 64em) {
+  .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a:hover,
+  .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a:focus {
+    text-decoration: none;
+    color: #FBF8F4;
+    background-color: #D40028;
+  }
 }
 /*
  *  View component
@@ -12919,9 +12974,30 @@ form#user-profile-form div .form-actions .form-submit .icon {
     padding-bottom: 62.5px;
   }
 }
+.view-aktuell .views-row {
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 48em) {
+  .view-aktuell .views-row {
+    padding-bottom: 37.5px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .view-aktuell .views-row {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 80em) {
+  .view-aktuell .views-row {
+    padding-bottom: 62.5px;
+  }
+}
 .view-aktuell .layout__region--content,
 .page-node-type-newsbeitrag .layout__region--content,
 .page-node-type-agenda-post .layout__region--content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 970px;
   position: relative;
 }
 .view-aktuell .layout__region--content:before,
@@ -13210,11 +13286,13 @@ form.webform-submission-form .form-actions button.webform-button--submit {
     font-size: 26px;
   }
 }
-form.webform-submission-form .form-actions button.webform-button--submit:hover,
-form.webform-submission-form .form-actions button.webform-button--submit:focus {
-  text-decoration: none;
-  color: #FBF8F4;
-  background-color: #D40028;
+@media screen and (min-width: 64em) {
+  form.webform-submission-form .form-actions button.webform-button--submit:hover,
+  form.webform-submission-form .form-actions button.webform-button--submit:focus {
+    text-decoration: none;
+    color: #FBF8F4;
+    background-color: black;
+  }
 }
 form.webform-submission-form .webform-component {
   margin: 0 auto 30px;
@@ -13560,11 +13638,13 @@ form.webform-submission-form .webform-component .form-checkboxes .checkbox > lab
     font-size: 26px;
   }
 }
-.btn:hover,
-.btn:focus {
-  text-decoration: none;
-  color: #FBF8F4;
-  background-color: #D40028;
+@media screen and (min-width: 64em) {
+  .btn:hover,
+  .btn:focus {
+    text-decoration: none;
+    color: #FBF8F4;
+    background-color: black;
+  }
 }
 .btn-normal {
   border: none;
@@ -13746,6 +13826,10 @@ header#navbar .navbar-collapse nav ul.navbar-nav {
 }
 header#navbar .navbar-collapse nav ul.navbar-nav li {
   float: none;
+}
+header#navbar .navbar-collapse nav ul.navbar-nav li.active a {
+  color: #D40028;
+  background: none;
 }
 header#navbar .navbar-collapse nav ul.navbar-nav li a {
   padding: 5px 0px;

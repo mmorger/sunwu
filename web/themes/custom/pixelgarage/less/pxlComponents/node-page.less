@@ -14,96 +14,110 @@
 // -------------------------
 // for all nodes
 .path-node, .path-frontpage {
-  .container {
-    .row {
-      .layout {
-        //#pxl-mixins.default-padding();
-        //#pxl-mixins.inner-container();
-        #pxl-mixins.resp-margin-bottom(75px);
-
-        .layout__region--content {
+    .container {
+      .row {
+        .region-content {
+        >.layout {
+          //#pxl-mixins.default-padding();
           //#pxl-mixins.inner-container();
-          //max-width: 1200px;
-          >.field:not(.field--name-field-image-carousel) {
-            #pxl-mixins.inner-container();
-            #pxl-mixins.default-padding();
-          }
+          #pxl-mixins.resp-margin-bottom(50px);
 
-          .field--name-node-title h1 {
-            #pxl-mixins.default-padding();
-            #pxl-mixins.title();
-            #pxl-mixins.resp-padding-top(20px);
-            #pxl-mixins.resp-padding-bottom(20px);
-            color: black;
-          }
-          //.field--name-node-title h2 {
-          //  #pxl-mixins.title();
-          //  #pxl-mixins.resp-padding-top(20px);
-          //  #pxl-mixins.resp-padding-bottom(30px);
-          //}
-          // Lead
-          >.field--name-field-lead {
-            #pxl-mixins.default-padding();
-            #pxl-mixins.lead();
-            #pxl-mixins.resp-padding-bottom(40px);
-          }
-
-          >.field--name-field-image-carousel {
-            #pxl-mixins.resp-margin-bottom(75px);
-          }
-          .field--name-body, .paragraph {
-            p {
-              //max-width: 650px;
-              img {
-                #pxl-mixins.resp-margin-top(40px);
-                #pxl-mixins.resp-margin-bottom(40px);
-                margin-left: auto;
-                margin-right: auto;
-                //max-width: 60%;
-              }
+          .layout__region--content {
+            //#pxl-mixins.inner-container();
+            //max-width: 1200px;
+            > .field:not(.field--name-field-image-carousel) {
+              #pxl-mixins.inner-container();
+              #pxl-mixins.default-padding();
             }
-            // Tables
-            table {
+
+            .field--name-node-title h1 {
+              #pxl-mixins.default-padding();
+              #pxl-mixins.title();
+              #pxl-mixins.resp-padding-top(20px);
+              #pxl-mixins.resp-padding-bottom(20px);
+              color: black;
+            }
+            //.field--name-node-title h2 {
+            //  #pxl-mixins.title();
+            //  #pxl-mixins.resp-padding-top(20px);
+            //  #pxl-mixins.resp-padding-bottom(30px);
+            //}
+            // Lead
+            > .field--name-field-lead {
+              #pxl-mixins.default-padding();
+              #pxl-mixins.lead();
+              #pxl-mixins.resp-padding-bottom(40px);
+            }
+
+            > .field--name-field-image-carousel {
               #pxl-mixins.resp-margin-bottom(75px);
-              width: 100%;
-              tr {
-                height: 50px;
-                width: 100%;
-                background: bottom left no-repeat url(../images/line_mobile.svg);
-                background-size: 100%;
-                background-position-x: -2px;
-                @media @tablet {
-                  background: bottom left no-repeat url(../images/line_normal.svg);
-                  background-size: 100%;
-                  background-position-x: -13px;
+            }
+            .field--name-body, .paragraph {
+              p {
+                //max-width: 650px;
+                img {
+                  #pxl-mixins.resp-margin-top(40px);
+                  #pxl-mixins.resp-margin-bottom(40px);
+                  margin-left: auto;
+                  margin-right: auto;
+                  //max-width: 60%;
                 }
-                td {
-                  padding-top: 10px;
-                  vertical-align: top;
+              }
+              // Tables
+              table {
+                #pxl-mixins.resp-margin-bottom(75px);
+                width: 100%;
+                tr {
+                  height: 50px;
+                  width: 100%;
+                  background: bottom left no-repeat url(../images/line_mobile.svg);
+                  background-size: 100%;
+                  background-position-x: -2px;
+                  @media @tablet {
+                    background: bottom left no-repeat url(../images/line_normal.svg);
+                    background-size: 100%;
+                    background-position-x: -13px;
+                  }
+                  td {
+                    padding-top: 10px;
+                    vertical-align: top;
+                  }
                 }
               }
             }
-          }
-          .field--name-field-date {
-            #pxl-mixins.date();
-            font-weight: normal;
-          }
-          .field--name-field-link {
-            #pxl-mixins.resp-margin-top(30px);
-            #pxl-mixins.flexbox();
-            flex-wrap: wrap;
-            align-items: flex-start;
-            align-content: flex-start;
-            justify-content: center;
+            .field--name-field-date {
+              #pxl-mixins.date();
+              font-weight: normal;
+            }
+            .field--name-field-link {
+              #pxl-mixins.resp-margin-top(30px);
+              #pxl-mixins.flexbox();
+              flex-wrap: wrap;
+              align-items: flex-start;
+              align-content: flex-start;
+              justify-content: center;
 
-          }
-          .field--name-field-video {
-            #pxl-mixins.resp-margin-top(20px);
-            #pxl-mixins.resp-margin-bottom(20px);
+            }
+            .field--name-field-video {
+              #pxl-mixins.resp-margin-top(20px);
+              #pxl-mixins.resp-margin-bottom(20px);
+            }
           }
         }
       }
-
+    }
+  }
+}
+.page-node-17 {
+  .container {
+    .row {
+      .region-content {
+        >.layout {
+          //#pxl-mixins.default-padding();
+          //#pxl-mixins.inner-container();
+          #pxl-mixins.resp-margin-bottom(0px);
+        }
+      }
     }
   }
 }

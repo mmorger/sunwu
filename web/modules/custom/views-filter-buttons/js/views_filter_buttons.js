@@ -13,7 +13,7 @@
         var id = $(e.target).attr('id');
 
         // Set the new value in the SELECT element
-        var filter = $('#views-exposed-form-news-page-1 select[name="tid"]');
+        var filter = $('#views-exposed-form-aktuell-block-2 select[name="tid"]');
         filter.val(id);
 
         // Unset and then set the active class
@@ -22,8 +22,8 @@
 
         // Do it! Trigger the select box
         //filter.trigger('change');
-        $('#views-exposed-form-news-page-1 select[name="tid"]').trigger('change');
-        $('#views-exposed-form-news-page-1 button.form-submit').trigger('click');
+        $('#views-exposed-form-aktuell-block-2 select[name="tid"]').trigger('change');
+        $('#views-exposed-form-aktuell-block-2 button.form-submit').trigger('click');
 
       });
     }
@@ -33,8 +33,8 @@
   jQuery(document).ajaxComplete(function(event, xhr, settings) {
     switch(settings.extraData.view_name){
 
-      case "news":
-        var filter_id = $('#views-exposed-form-news-page-1 select[name="tid"]').find(":selected").val();
+      case "aktuell":
+        var filter_id = $('#views-exposed-form-aktuell-block-2 select[name="tid"]').find(":selected").val();
 
         $('.filter-tab a').removeClass('active');
         $('.filter-tab').find('#' + filter_id).addClass('active');

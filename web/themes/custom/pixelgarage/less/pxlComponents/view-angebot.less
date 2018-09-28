@@ -14,29 +14,32 @@
 // General settings
 // -------------------------
 .view-angebot {
+ #pxl-mixins.inner-container();
+ #pxl-mixins.default-padding();
  //#pxl-mixins.resp-padding-bottom(50px);
  .row {
   .col {
+   #pxl-mixins.resp-padding-bottom(50px);
    .layout {
-   .layout__region--content {
-     .field--name-node-title {
-      h2 {
-       margin: 0;
-       margin-top: -30px;
-       padding: 0;
-       text-align: center;
-       @media @tablet {
-        margin-top: -28px;
-       }
-       @media @normal {
-        //margin-top: -28px;
-       }
-       a {
-        #pxl-mixins.btn(@bg: black);
+    .layout__region--content {
+      .field--name-node-title {
+       h2 {
+        margin: 0;
+        margin-top: -30px;
+        padding: 0;
+        text-align: center;
+        @media @tablet {
+         margin-top: -28px;
+        }
+        @media @normal {
+         //margin-top: -28px;
+        }
+        a {
+         #pxl-mixins.btn(@bg: black; @hvr: @pxl-color-active);
+        }
        }
       }
      }
-    }
    }
   }
  }

@@ -24,7 +24,7 @@
         "drupal/bg_image_formatter": "^1.2",
         "drupal/bootstrap": "^3.13",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.5.3",
+        "drupal/core": "~8.6.1",
         "drupal/entity_clone": "^1.0@alpha",
         "drupal/entity_reference_revisions": "^1.5",
         "drupal/field_group": "^1.0",
@@ -44,7 +44,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "~8.5.3"
+        "webflo/drupal-core-require-dev": "~8.6.1"
     },
     "conflict": {
         "drupal/drupal": "*"

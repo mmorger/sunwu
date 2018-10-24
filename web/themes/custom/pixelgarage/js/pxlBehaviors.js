@@ -20,7 +20,7 @@
 
       $(window).off("scroll");
       $(window).on("scroll", function () {
-        var $nav = $("header.navbar #navbar-collapse");
+        var $nav = $("header.navbar .navbar-header");
         //$navCont = $("header.navbar .container")
         //$width   = $(window).width();
 
@@ -118,6 +118,24 @@
       });
     }
   };
+
+  Drupal.behaviors.scrolltoanchors = {
+    attach: function(context, settings) {$(function() {
+      $('ul.menu li a').click(function() {
+        var pos = this.href.indexOf('#');
+        if (pos == -1) return true;
+        var target = $(this.href.slice(pos));
+        if (target.length) {
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top - 80
+          }, 500, 'swing');
+          return false;
+        }
+      });
+    });
+    }
+  };
+
 
   /**
    * This behavior adds shadow to header on scroll.

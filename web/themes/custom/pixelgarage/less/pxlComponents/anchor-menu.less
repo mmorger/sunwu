@@ -13,23 +13,31 @@
 // General settings
 // -------------------------
 
-.field--name-field-anchor-id {
-  //#pxl-mixins.flexbox(wrap; center;);
+.field--name-field-subnav {
+  #pxl-mixins.resp-margin-bottom(50px);
+  #pxl-mixins.flexbox();
+  justify-content: center;
 
-  .field--item {
+
+  li {
+    display: inline-block;
     a {
       #pxl-mixins.navigation();
       margin: 10px;
-      color: @pxl-color-active;
-      font-size: 13px;
+      color: @pxl-color-brown;
+      background-color: transparent;
+      #pxl-mixins.small();
       font-weight: 400;
-      line-height: 3;
+      line-height: 1;
+      letter-spacing: 0.075em;
+      border-bottom: 1px solid @pxl-color-brown;
+      &:hover {
+        color: @pxl-color-active;
+        background-color: transparent;
+      }
       @media @normal {
         margin: 15px;
-        line-height: 2;
-        &:hover {
-          border-bottom: 1px solid @pxl-color-active;
-        }
+        line-height: 1;
       }
     }
   }

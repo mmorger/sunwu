@@ -14,14 +14,18 @@
 
 // Main settings
 // -------------------------
-//body.navbar-is-fixed-top {
-//  padding-top: 110px !important;
-//
-//  &.admin-menu {
-//    padding-top: 110px !important;
-//  }
-//
-//}
+body.toolbar-fixed {
+  &.toolbar-horizontal {
+    #navbar-collapse {
+      padding-top: 80px !important;
+    }
+  }
+  &.toolbar-vertical {
+    #navbar-collapse {
+      padding-top: 40px !important;
+    }
+  }
+}
 
 header#navbar {
   background: @pxl-color-header;
@@ -98,13 +102,13 @@ header#navbar {
           margin-left: auto;
           margin-right: auto;
           padding-top: 15px;
-          width: 115px;
+          width: 210px;
           height: auto;
 
           @media @normal {
-            padding-top: 8px;
+            padding-top: 10px;
             padding-left: 5px;
-            width: 175px;
+            width: 340px;
           }
 
           @media screen and (min-width: 1800px) {
@@ -231,7 +235,7 @@ header#navbar {
 
     @media @normal {
       display: block;
-      position: fixed;
+      //position: fixed;
       top: 0;
       //margin-left: 5rem;
       padding: 0;

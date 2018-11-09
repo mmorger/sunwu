@@ -13,7 +13,7 @@
 
       $(window).on("load", function () {
         if ($(window).scrollTop() >= fixedHeaderScrollPos) {
-          $("header.navbar #navbar-collapse").addClass('nav-solid');
+          $("header.navbar").addClass('nav-solid');
         }
       });
 
@@ -91,7 +91,9 @@
         s.setAttribute("type", "video/mp4");
         v.append(s);
         $videoParentContainer.append(v);
-
+        setTimeout(function(){
+          v.play();
+        },1000);
       }
 
       $(window).on("load", function () {

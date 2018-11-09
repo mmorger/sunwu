@@ -83,17 +83,14 @@
       function addVideo(vurl) {
         var v = document.createElement("video");
         var s = document.createElement("source");
-        v.autoplay = true;
-        v.loop = true;
-        v.id = "bgvideo";
+        //v.autoplay = true;
+        //v.loop = true;
+        //v.id = "bgvideo";
         //v.muted = true;
-        s.src = vPath + vurl;
-        s.setAttribute("type", "video/mp4");
-        v.append(s);
-        $videoParentContainer.append(v);
-        setTimeout(function(){
-          v.play();
-        },1000);
+        //s.src = vPath + vurl;
+        //s.setAttribute("type", "video/mp4");
+        //v.append(s);
+        $videoParentContainer.append('<video autoplay="" muted="" loop="" id="bgvideo"><source src="' + vPath + vurl + '" type="video/mp4"></video>');
       }
 
       $(window).on("load", function () {

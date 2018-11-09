@@ -13883,6 +13883,12 @@ form.webform-submission-form .webform-component .form-checkboxes .checkbox > lab
 .view-footer {
   text-align: center;
 }
+section.block-buttons {
+  text-align: center;
+}
+section.block-buttons p {
+  display: inline-block;
+}
 /*
  *  Header section (navigation)
  * --------------------------------------------------*/

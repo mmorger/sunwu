@@ -13245,6 +13245,11 @@ form#user-profile-form div .form-actions .form-submit .icon {
   color: #870000;
   text-transform: uppercase;
 }
+.view-empty {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 970px;
+}
 #block-views-block-aktuell-block-1 {
   margin: 120px 0 0 0;
   padding: 0;

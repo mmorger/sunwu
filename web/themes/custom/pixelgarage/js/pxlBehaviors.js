@@ -90,7 +90,7 @@
         //s.src = vPath + vurl;
         //s.setAttribute("type", "video/mp4");
         //v.append(s);
-        $videoParentContainer.append('<video autoplay="" muted="" loop="" id="bgvideo"><source src="' + vPath + vurl + '" type="video/mp4"></video>');
+        $videoParentContainer.append('<video autoplay muted loop playsinline id="bgvideo"><source src="' + vPath + vurl + '" type="video/mp4"></video>');
       }
 
       $(window).on("load", function () {

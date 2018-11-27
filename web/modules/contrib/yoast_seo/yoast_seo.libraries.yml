@@ -15,8 +15,7 @@ yoast_seo_core:
       - core/jquery.once
       - core/drupal
       - core/drupalSettings
-      - ckeditor/drupal.ckeditor.admin
-  css:
+  ss:
     theme:
       css/yoast_seo.css: {}
 

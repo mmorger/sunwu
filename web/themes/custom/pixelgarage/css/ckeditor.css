@@ -2372,25 +2372,25 @@
  * --------------------------------------------------*/
 #pxl-mixins .lead {
   font-family: 'ProximaNovaRegular', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   letter-spacing: normal;
   line-height: 1.3em;
   text-align: center;
   color: #222;
 }
-@media screen and (min-width: 43.2em) {
+@media screen and (min-width: 41.45454545454545em) {
   #pxl-mixins .lead {
-    font-size: 2.60416667vw;
+    font-size: 2.86458333vw;
   }
 }
 @media screen and (min-width: 48em) {
   #pxl-mixins .lead {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 64em) {
   #pxl-mixins .lead {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 .pxl-title {

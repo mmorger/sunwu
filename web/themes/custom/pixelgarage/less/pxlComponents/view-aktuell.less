@@ -24,6 +24,7 @@
 .view-aktuell, .page-node-type-newsbeitrag, .page-node-type-agenda-post {
  .layout__region--content {
    #pxl-mixins.inner-container();
+  #pxl-mixins.default-padding();
   position: relative;
   &:before {
    position: absolute;
@@ -33,8 +34,8 @@
    content: '';
    background: top left no-repeat url(../images/line_news.svg);
   }
-  .field--name-field-thementitel {
-   #pxl-mixins.resp-padding-bottom(12px);
+  .field--name-field-thementitel, {
+   #pxl-mixins.resp-padding-bottom(3px);
    #pxl-mixins.font-size-responsive();
    font-family: @pxl-text-font-bold;
    text-transform: uppercase;
@@ -46,7 +47,7 @@
   }
   .field--name-node-title {
    h2 {
-    #pxl-mixins.resp-padding-bottom(10px);
+    //#pxl-mixins.resp-padding-bottom(10px);
     #pxl-mixins.subtitle();
     margin:0;
     padding: 0;
@@ -58,6 +59,21 @@
      text-transform: uppercase;
     }
    }
+  }
+  .field--name-field-event-date {
+   //#pxl-mixins.resp-padding-bottom(5px);
+   #pxl-mixins.font-size-responsive();
+   font-family: @pxl-text-font-bold;
+   text-transform: none;
+   color: @text-color;
+  }
+ }
+}
+.page-node-type-agenda-post {
+ .layout__region--content {
+  @media @normal {
+   padding-left: 140px;
+   padding-right: 140px;
   }
  }
 }

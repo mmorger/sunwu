@@ -45,8 +45,11 @@
             // Lead
             > .field--name-field-lead {
               #pxl-mixins.default-padding();
-              #pxl-mixins.lead();
               #pxl-mixins.resp-padding-bottom(40px);
+              h2, p {
+                #pxl-mixins.lead();
+                margin-top: 0;
+              }
             }
 
             > .field--name-field-image-carousel {
@@ -56,8 +59,8 @@
               p {
                 //max-width: 650px;
                 img {
-                  #pxl-mixins.resp-margin-top(40px);
-                  #pxl-mixins.resp-margin-bottom(40px);
+                  #pxl-mixins.resp-margin-top(20px);
+                  #pxl-mixins.resp-margin-bottom(20px);
                   margin-left: auto;
                   margin-right: auto;
                   //max-width: 60%;
@@ -65,42 +68,28 @@
               }
               // Tables
               table {
-                #pxl-mixins.resp-margin-bottom(75px);
+                //#pxl-mixins.resp-margin-bottom(75px);
                 width: 100%;
                 tr {
-                  height: 50px;
+                  min-height: 50px;
                   width: 100%;
-                  background: bottom left no-repeat url(../images/line_mobile.svg);
+                  background: top left no-repeat url(../images/line_mobile.svg);
                   background-size: 100%;
                   background-position-x: -2px;
                   @media @tablet {
-                    background: bottom left no-repeat url(../images/line_normal.svg);
+                    background: top left no-repeat url(../images/line_normal.svg);
                     background-size: 100%;
                     background-position-x: -13px;
                   }
                   td {
-                    padding-top: 10px;
+                    padding: 14px 0 7px;
                     vertical-align: top;
                   }
                 }
               }
             }
-            .field--name-field-date {
-              #pxl-mixins.date();
-              font-weight: normal;
-            }
-            .field--name-field-link {
-              #pxl-mixins.resp-margin-top(30px);
-              #pxl-mixins.flexbox();
-              flex-wrap: wrap;
-              align-items: flex-start;
-              align-content: flex-start;
-              justify-content: center;
-
-            }
             .field--name-field-video {
-              #pxl-mixins.resp-margin-top(20px);
-              #pxl-mixins.resp-margin-bottom(20px);
+              #pxl-mixins.resp-margin-bottom(50px);
             }
           }
         }
@@ -108,16 +97,16 @@
     }
   }
 }
-.page-node-17 {
-  .container {
-    .row {
-      .region-content {
-        >.layout {
-          //#pxl-mixins.default-padding();
-          //#pxl-mixins.inner-container();
-          #pxl-mixins.resp-margin-bottom(0px);
-        }
-      }
-    }
-  }
-}
+//.page-node-17 {
+//  .container {
+//    .row {
+//      .region-content {
+//        >.layout {
+//          //#pxl-mixins.default-padding();
+//          //#pxl-mixins.inner-container();
+//          #pxl-mixins.resp-margin-bottom(0px);
+//        }
+//      }
+//    }
+//  }
+//}

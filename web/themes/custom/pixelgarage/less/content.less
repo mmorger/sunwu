@@ -59,7 +59,7 @@ body {
   }
 
   .main-container {
-    padding-bottom: @pxl-footer-height;
+    #pxl-mixins.resp-padding-bottom(20px);
     height: 100%;
     background-color: @pxl-color-main;
 
@@ -129,7 +129,10 @@ body {
         //
         // main content region
         .region-content {
-          margin: @region-content-margin;
+
+          @media @normal {
+            margin: @region-content-margin;
+          }
 
           .view-header h2 {
             #pxl-mixins.title();

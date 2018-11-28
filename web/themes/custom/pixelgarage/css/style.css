@@ -9940,6 +9940,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 @media screen and (min-width: 48em) {
   .field--name-field-subnav,
@@ -10441,6 +10442,13 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr td {
   padding: 14px 0 7px;
   vertical-align: top;
+}
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr td img,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr td img,
+.path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr td img,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr td img {
+  margin-left: 0;
+  max-width: 220px;
 }
 .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
 .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
@@ -14120,7 +14128,6 @@ header#navbar .header-background .logo-wrapper {
   }
 }
 header#navbar .header-background .logo-wrapper .logo-big {
-  margin-left: 1rem;
   width: 50vw;
   height: auto;
   background: center center no-repeat url(../images/sunwu-logo.png);
@@ -14128,7 +14135,6 @@ header#navbar .header-background .logo-wrapper .logo-big {
 }
 @media screen and (min-width: 48em) {
   header#navbar .header-background .logo-wrapper .logo-big {
-    margin-left: 5rem;
     width: 20vw;
   }
 }
@@ -14175,14 +14181,15 @@ body.page-node-3 header#navbar .header-background,
 body.page-node-4 header#navbar .header-background {
   position: relative;
   overflow: hidden;
-  height: 90vh;
+  height: 100vw;
 }
 @media screen and (min-width: 64em) {
   body.path-frontpage header#navbar .header-background,
   body.page-node-2 header#navbar .header-background,
   body.page-node-3 header#navbar .header-background,
   body.page-node-4 header#navbar .header-background {
-    max-height: 750px;
+    height: 90vh;
+    max-height: 800px;
   }
 }
 /*
@@ -14257,9 +14264,24 @@ body strong {
   }
 }
 body .main-container {
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   height: 100%;
   background-color: #FBF8F4;
+}
+@media screen and (min-width: 48em) {
+  body .main-container {
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 64em) {
+  body .main-container {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 80em) {
+  body .main-container {
+    padding-bottom: 25px;
+  }
 }
 body .main-container .container,
 body .main-container .container-fluid {
@@ -14421,9 +14443,11 @@ body .main-container .container-fluid .row section ul.action-links li a {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 15px;
 }
-body .main-container .container .row .region-content,
-body .main-container .container-fluid .row .region-content {
-  margin: 50px 0;
+@media screen and (min-width: 64em) {
+  body .main-container .container .row .region-content,
+  body .main-container .container-fluid .row .region-content {
+    margin: 50px 0;
+  }
 }
 body .main-container .container .row .region-content .view-header h2,
 body .main-container .container-fluid .row .region-content .view-header h2 {
@@ -14611,5 +14635,28 @@ footer.footer.container .wrapper .footer-element .active {
 @media screen and (min-width: 64em) {
   footer.footer.container .wrapper .footer-element {
     line-height: 1;
+  }
+}
+#block-sunwu-calligraphy {
+  margin-top: 50px;
+  width: 100%;
+  height: 70vw;
+  max-height: 550px;
+  background: top center no-repeat url(../images/sunwu_calligraphy.svg);
+  background-size: contain;
+}
+@media screen and (min-width: 48em) {
+  #block-sunwu-calligraphy {
+    margin-top: 75px;
+  }
+}
+@media screen and (min-width: 64em) {
+  #block-sunwu-calligraphy {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 80em) {
+  #block-sunwu-calligraphy {
+    margin-top: 125px;
   }
 }

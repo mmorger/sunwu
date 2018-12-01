@@ -420,13 +420,22 @@ header#navbar {
       }
     }
     #bgvideo {
-      position: relative;
-      min-width: 100%;
-      min-height: 100%;
-      #pxl-mixins.center-vertically();
-      //#pxl-mixins.center-horizontally();
-      //z-index: 103;
 
+      &.mobile {
+        width: 100%;
+        height: auto;
+      }
+
+      &.desktop {
+        position: relative;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        //#pxl-mixins.center-vertically();
+        #pxl-mixins.center-horizontally();
+        //z-index: 103;
+      }
     }
   }
 }

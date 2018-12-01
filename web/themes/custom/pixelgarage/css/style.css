@@ -14166,14 +14166,20 @@ header#navbar .header-background:after {
     height: 95px;
   }
 }
-header#navbar .header-background #bgvideo {
+header#navbar .header-background #bgvideo.mobile {
+  width: 100%;
+  height: auto;
+}
+header#navbar .header-background #bgvideo.desktop {
+  position: relative;
   min-width: 100%;
   min-height: 100%;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 body.path-frontpage header#navbar .header-background,
 body.page-node-2 header#navbar .header-background,

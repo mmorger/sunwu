@@ -6,6 +6,23 @@
 
 (function ($) {
 
+  /**
+   * Set a class defining the device, e.g. mobile-device or desktop.
+   */
+  Drupal.behaviors.setMobileClass = {
+    attach: function (context) {
+      if (isMobile.any) {
+        $('body').addClass('mobile-device');
+      }
+      else {
+        $('body').addClass('desktop');
+      }
+    }
+  };
+
+  /**
+   * Adds a class to body on scroll for fixed header.
+   */
   Drupal.behaviors.fixHeaderOnScroll = {
     attach: function (context) {
       var isFixedHeader = true,
@@ -76,44 +93,46 @@
     attach: function () {
       var body = document.getElementsByTagName("BODY")[0],
       nid = body.classList[0],
+      mobileCheck = body.classList.contains("mobile-device"),
       vPath = "/themes/custom/pixelgarage/videos/",
       videoUrl,
+      videoMarkup,
       $videoParentContainer = $('.header-background');
 
       function addVideo(vurl) {
         var v = document.createElement("video");
         var s = document.createElement("source");
-        //v.autoplay = true;
-        //v.loop = true;
-        //v.id = "bgvideo";
-        //v.muted = true;
-        //s.src = vPath + vurl;
-        //s.setAttribute("type", "video/mp4");
-        //v.append(s);
-        $videoParentContainer.append('<video autoplay muted loop playsinline id="bgvideo"><source src="' + vPath + vurl + '" type="video/mp4"></video>');
+        if (mobileCheck == true) {
+          videoMarkup = '<video autoplay muted loop playsinline poster=' + vPath + vurl + "_mobile.jpg"+ ' id="bgvideo" class="mobile"><source src="' + vPath + vurl + "_mobile.webm" + '" type="video/webm"><source src="' + vPath + vurl + "_mobile.ogv" + '" type="video/ogg"></video>';
+          $videoParentContainer.append(videoMarkup);
+        } else if (mobileCheck == false) {
+          videoMarkup = '<video autoplay muted loop playsinline id="bgvideo" class="desktop"><source src="' + vPath + vurl + ".mp4" + '" type="video/mp4"></video>';
+          $videoParentContainer.append(videoMarkup);
+        }
       }
 
       $(window).on("load", function () {
-        switch(nid){
-          case "page-node-1":
-            videoUrl = "sunwu_intro.mp4";
-            addVideo(videoUrl);
-            break;
 
-          case "page-node-3":
-            videoUrl = "sunwu_kungFu01.mp4";
-            addVideo(videoUrl);
-            break;
+          switch(nid){
+            case "page-node-1":
+              videoUrl = "sunwu_intro";
+              addVideo(videoUrl);
+              break;
 
-          case "page-node-2":
-            videoUrl = "sunwu_kungFu02.mp4";
-            addVideo(videoUrl);
-            break;
+            case "page-node-3":
+              videoUrl = "sunwu_angebot";
+              addVideo(videoUrl);
+              break;
 
-          case "page-node-4":
-            videoUrl = "sunwu_sanda.mp4";
-            addVideo(videoUrl);
-        }
+            case "page-node-2":
+              videoUrl = "sunwu_wingchun";
+              addVideo(videoUrl);
+              break;
+
+            case "page-node-4":
+              videoUrl = "sunwu_sanda";
+              addVideo(videoUrl);
+          }
       });
     }
   };

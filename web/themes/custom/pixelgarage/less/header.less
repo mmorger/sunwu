@@ -355,16 +355,18 @@ header#navbar {
     overflow: hidden;
     z-index: 101;
     background-color: black;
-    height: 50vh;
+    height: 100vw;
     background-size: cover;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: center;
     background-attachment: scroll;
 
     @media @tablet {
       max-height: 350px;
     }
     @media @normal {
+      height: 50vh;
+      min-height: 350px;
       max-height: 450px;
     }
 
@@ -379,7 +381,7 @@ header#navbar {
 
       @media @normal {
         justify-content: left;
-        height: 100%;
+        //height: 100%;
       }
 
       .logo-big {
@@ -420,12 +422,10 @@ header#navbar {
       }
     }
     #bgvideo {
-
       &.mobile {
         width: 100%;
         height: auto;
       }
-
       &.desktop {
         position: relative;
         min-width: 100%;
@@ -434,7 +434,22 @@ header#navbar {
         height: auto;
         //#pxl-mixins.center-vertically();
         #pxl-mixins.center-horizontally();
-        //z-index: 103;
+
+        @media @tablet {
+
+          width: 100%;
+
+        }
+        @media @normal {
+          width: auto;
+          height: 100%;
+        }
+
+        @media screen and (min-width: 1450px) {
+          min-width: none;
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
@@ -444,7 +459,8 @@ body {
   &.path-frontpage,
   &.page-node-2,
   &.page-node-3,
-  &.page-node-4 {
+  &.page-node-4,
+  &.page-node-22{
     header#navbar {
       .header-background {
         position: relative;

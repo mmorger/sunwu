@@ -12849,25 +12849,34 @@ form#user-profile-form div .form-actions .form-submit .icon {
   padding-right: 15px;
 }
 .view-angebot .row .col {
-  padding-bottom: 25px;
+  padding-bottom: 37.5px;
 }
 @media screen and (min-width: 48em) {
   .view-angebot .row .col {
-    padding-bottom: 37.5px;
+    padding-bottom: 56.25px;
   }
 }
 @media screen and (min-width: 64em) {
   .view-angebot .row .col {
-    padding-bottom: 50px;
+    padding-bottom: 75px;
   }
 }
 @media screen and (min-width: 80em) {
   .view-angebot .row .col {
-    padding-bottom: 62.5px;
+    padding-bottom: 93.75px;
   }
+}
+.view-angebot .row .col .layout {
+  position: relative;
+}
+.view-angebot .row .col .layout .layout__region--content .field--name-node-title {
+  position: absolute;
+  width: 100%;
 }
 .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 {
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -30px;
   padding: 0;
   text-align: center;
@@ -12951,6 +12960,23 @@ form#user-profile-form div .form-actions .form-submit .icon {
     text-decoration: none;
     color: #FBF8F4;
     background-color: #D40028;
+  }
+}
+.view-angebot .row .col .layout .layout__region--content .field--name-field-thumbnail img {
+  -webkit-transition: filter 0.5s ease;
+  -o-transition: filter 0.5s ease;
+  transition: filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+@media screen and (min-width: 64em) {
+  .view-angebot .row .col .layout .layout__region--content:hover .field--name-node-title a {
+    background-color: #D40028;
+  }
+  .view-angebot .row .col .layout .layout__region--content:hover .field--name-field-thumbnail img {
+    -webkit-filter: none;
+    filter: none;
   }
 }
 /*
@@ -13323,22 +13349,22 @@ form.webform-submission-form .form-item label {
   font-weight: 600;
   letter-spacing: 0.02em;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: normal;
   color: #222;
 }
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 42.35294117647059em) {
   form.webform-submission-form .form-item label {
-    font-size: 2.08333333vw;
+    font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
   form.webform-submission-form .form-item label {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
   form.webform-submission-form .form-item label {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 form.webform-submission-form .form-item label.form-required:after {
@@ -13348,8 +13374,29 @@ form.webform-submission-form .form-item label.form-required:after {
   width: 7px;
   vertical-align: text-top;
 }
+form.webform-submission-form .form-item .form-textarea-wrapper {
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 48em) {
+  form.webform-submission-form .form-item .form-textarea-wrapper {
+    padding-bottom: 22.5px;
+  }
+}
+@media screen and (min-width: 64em) {
+  form.webform-submission-form .form-item .form-textarea-wrapper {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 80em) {
+  form.webform-submission-form .form-item .form-textarea-wrapper {
+    padding-bottom: 37.5px;
+  }
+}
+form.webform-submission-form .form-item .form-textarea-wrapper div.grippie {
+  display: none;
+}
 form.webform-submission-form .form-actions {
-  text-align: right;
+  text-align: center;
 }
 form.webform-submission-form .form-actions button.webform-button--submit {
   margin-top: 20px;
@@ -13426,6 +13473,39 @@ form.webform-submission-form .form-actions button.webform-button--submit {
     background-color: black;
   }
 }
+form.webform-submission-form #edit-interessen--wrapper {
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 48em) {
+  form.webform-submission-form #edit-interessen--wrapper {
+    margin-bottom: 0;
+  }
+}
+form.webform-submission-form legend {
+  font-family: 'urwg', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 1.1em;
+  text-align: left;
+  color: #222;
+  text-transform: none;
+  border: none;
+}
+@media screen and (min-width: 39.529411764705884em) {
+  form.webform-submission-form legend {
+    font-size: 4.42708333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  form.webform-submission-form legend {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 64em) {
+  form.webform-submission-form legend {
+    font-size: 45px;
+  }
+}
 form.webform-submission-form .webform-component {
   margin: 0 auto 30px;
   padding: 0;
@@ -13450,22 +13530,22 @@ form.webform-submission-form .webform-component label {
   font-weight: 600;
   letter-spacing: 0.02em;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: normal;
   color: #222;
 }
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 42.35294117647059em) {
   form.webform-submission-form .webform-component label {
-    font-size: 2.08333333vw;
+    font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
   form.webform-submission-form .webform-component label {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
   form.webform-submission-form .webform-component label {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 form.webform-submission-form .webform-component label.form-required:after {
@@ -13491,9 +13571,6 @@ form.webform-submission-form .webform-component div.help-block strong {
 form.webform-submission-form .webform-component .form-control,
 form.webform-submission-form .webform-component .form-managed-file {
   height: 30px;
-}
-form.webform-submission-form .webform-component .form-textarea-wrapper div.grippie {
-  display: none;
 }
 form.webform-submission-form .webform-component.webform-component-select {
   position: relative;
@@ -14092,10 +14169,10 @@ header#navbar .header-background {
   overflow: hidden;
   z-index: 101;
   background-color: black;
-  height: 50vh;
+  height: 100vw;
   background-size: cover;
   background-position-x: center;
-  background-position-y: top;
+  background-position-y: center;
   background-attachment: scroll;
 }
 @media screen and (min-width: 48em) {
@@ -14105,6 +14182,8 @@ header#navbar .header-background {
 }
 @media screen and (min-width: 64em) {
   header#navbar .header-background {
+    height: 50vh;
+    min-height: 350px;
     max-height: 450px;
   }
 }
@@ -14124,7 +14203,6 @@ header#navbar .header-background .logo-wrapper {
 @media screen and (min-width: 64em) {
   header#navbar .header-background .logo-wrapper {
     justify-content: left;
-    height: 100%;
   }
 }
 header#navbar .header-background .logo-wrapper .logo-big {
@@ -14181,10 +14259,29 @@ header#navbar .header-background #bgvideo.desktop {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+@media screen and (min-width: 48em) {
+  header#navbar .header-background #bgvideo.desktop {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 64em) {
+  header#navbar .header-background #bgvideo.desktop {
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1450px) {
+  header#navbar .header-background #bgvideo.desktop {
+    min-width: none;
+    width: 100%;
+    height: auto;
+  }
+}
 body.path-frontpage header#navbar .header-background,
 body.page-node-2 header#navbar .header-background,
 body.page-node-3 header#navbar .header-background,
-body.page-node-4 header#navbar .header-background {
+body.page-node-4 header#navbar .header-background,
+body.page-node-22 header#navbar .header-background {
   position: relative;
   overflow: hidden;
   height: 100vw;
@@ -14193,7 +14290,8 @@ body.page-node-4 header#navbar .header-background {
   body.path-frontpage header#navbar .header-background,
   body.page-node-2 header#navbar .header-background,
   body.page-node-3 header#navbar .header-background,
-  body.page-node-4 header#navbar .header-background {
+  body.page-node-4 header#navbar .header-background,
+  body.page-node-22 header#navbar .header-background {
     height: 90vh;
     max-height: 800px;
   }
@@ -14531,6 +14629,7 @@ body .main-container .container-fluid .row .region-content .field--type-viewsref
  * --------------------------------------------------*/
 footer.footer.container {
   margin: 0;
+  margin-bottom: -1px;
   padding: 30px 0 0 0;
   width: 100%;
   max-width: none;

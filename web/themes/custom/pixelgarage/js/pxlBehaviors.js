@@ -103,10 +103,10 @@
         var v = document.createElement("video");
         var s = document.createElement("source");
         if (mobileCheck == true) {
-          videoMarkup = '<video autoplay muted loop playsinline poster=' + vPath + vurl + "_mobile.jpg"+ ' id="bgvideo" class="mobile"><source src="' + vPath + vurl + "_mobile.webm" + '" type="video/webm"><source src="' + vPath + vurl + "_mobile.ogv" + '" type="video/ogg"></video>';
+          videoMarkup = '<video autoplay muted loop playsinline poster=' + vPath + vurl + "_mobile.jpg"+ ' id="bgvideo" class="mobile"><source src="' + vPath + vurl + "_mobile.mp4" + '" type="video/mp4"><source src="' + vPath + vurl + "_mobile.webm" + '" type="video/webm"><source src="' + vPath + vurl + "_mobile.ogv" + '" type="video/ogg"></video>';
           $videoParentContainer.append(videoMarkup);
         } else if (mobileCheck == false) {
-          videoMarkup = '<video autoplay muted loop playsinline id="bgvideo" class="desktop"><source src="' + vPath + vurl + ".mp4" + '" type="video/mp4"></video>';
+          videoMarkup = '<video autoplay muted loop playsinline id="bgvideo" class="desktop"><source src="' + vPath + vurl + ".mp4" + '" type="video/mp4"><source src="' + vPath + vurl + ".webm" + '" type="video/webm"><source src="' + vPath + vurl + ".ogv" + '" type="video/ogg"></video>';
           $videoParentContainer.append(videoMarkup);
         }
       }

@@ -25,6 +25,16 @@ function pixelgarage_preprocess_page(&$vars) {
   // hide titles on login forms
   //pg_login_preprocess_page($vars);
 }
+//function pixelgarage_preprocess_paragraph__lektion(&$variables) {
+//  $paragraph = $variables['paragraph'];
+//
+//  if (!$paragraph->field_link_content->isEmpty() && !$paragraph->field_titel->isEmpty()) {
+//    $link = $paragraph->field_link_content->uri;
+//    if (!empty($link)) {
+//      $variables['my_title_link'] = $link;
+//    }
+//  }
+//}
 
 
 //function pixelgarage_preprocess_field(&$variables) {

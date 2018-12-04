@@ -10846,7 +10846,7 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
   line-height: 1.3em;
   color: #222;
   text-align: left;
-  text-transform: lowercase;
+  text-transform: none;
   font-family: 'ProximaNovaBold';
 }
 @media screen and (min-width: 48em) {

@@ -15,7 +15,7 @@ yoast_seo_core:
       - core/jquery.once
       - core/drupal
       - core/drupalSettings
-  ss:
+  css:
     theme:
       css/yoast_seo.css: {}
 

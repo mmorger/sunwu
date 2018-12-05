@@ -10448,7 +10448,8 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr td img,
 .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr td img {
   margin-left: 0;
-  max-width: 220px;
+  max-width: 150px;
+  mix-blend-mode: multiply;
 }
 .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
 .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
@@ -10837,7 +10838,8 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
     width: auto;
   }
 }
-.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
+.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
   padding-bottom: 0px;
   font-family: 'ProximaNovaRegular', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -10850,32 +10852,38 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
   font-family: 'ProximaNovaBold';
 }
 @media screen and (min-width: 48em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 80em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     font-size: 19px;
   }
 }

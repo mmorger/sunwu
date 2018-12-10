@@ -10052,6 +10052,10 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+}
+#views-exposed-form-aktuell-block-2 .links-list li {
+  margin-bottom: 15px;
 }
 #views-exposed-form-aktuell-block-2 .links-list li a {
   padding: 5px 0px;
@@ -10168,6 +10172,27 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .paragraph:not(.paragraph--type--tag-plan) .field--name-field-body p:last-child {
   margin-bottom: 50px;
+}
+.page-node-30 .paragraph .field--name-field-titel {
+  text-align: left;
+}
+.page-node-30 .paragraph .field--name-field-body {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 48em) {
+  .page-node-30 .paragraph .field--name-field-body {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .page-node-30 .paragraph .field--name-field-body {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 80em) {
+  .page-node-30 .paragraph .field--name-field-body {
+    margin-bottom: 25px;
+  }
 }
 /*
  *  Node page component
@@ -10410,46 +10435,35 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     margin-bottom: 25px;
   }
 }
-.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table,
-.path-node .container .row .region-content > .layout .layout__region--content .paragraph table,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table {
-  width: 100%;
-}
-.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
-.path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr {
-  min-height: 50px;
-  width: 100%;
-  background: top left no-repeat url(../images/line_mobile.svg);
-  background-size: 100%;
-  background-position-x: -2px;
+.path-node .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+.path-node .container .row .region-content > .layout .layout__region--content .paragraph ul li,
+.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph ul li {
+  padding-bottom: 4px;
 }
 @media screen and (min-width: 48em) {
-  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
-  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr,
-  .path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr,
-  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr {
-    background: top left no-repeat url(../images/line_normal.svg);
-    background-size: 100%;
-    background-position-x: -13px;
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph ul li,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph ul li {
+    padding-bottom: 6px;
   }
 }
-.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr td,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr td,
-.path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr td,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr td {
-  padding: 14px 0 7px;
-  vertical-align: top;
+@media screen and (min-width: 64em) {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph ul li,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph ul li {
+    padding-bottom: 8px;
+  }
 }
-.path-node .container .row .region-content > .layout .layout__region--content .field--name-body table tr td img,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body table tr td img,
-.path-node .container .row .region-content > .layout .layout__region--content .paragraph table tr td img,
-.path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph table tr td img {
-  margin-left: 0;
-  max-width: 150px;
-  mix-blend-mode: multiply;
+@media screen and (min-width: 80em) {
+  .path-node .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-body ul li,
+  .path-node .container .row .region-content > .layout .layout__region--content .paragraph ul li,
+  .path-frontpage .container .row .region-content > .layout .layout__region--content .paragraph ul li {
+    padding-bottom: 10px;
+  }
 }
 .path-node .container .row .region-content > .layout .layout__region--content .field--name-field-video,
 .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
@@ -10472,6 +10486,55 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   .path-frontpage .container .row .region-content > .layout .layout__region--content .field--name-field-video {
     margin-bottom: 62.5px;
   }
+}
+table {
+  width: 100%;
+}
+table caption {
+  font-family: 'ProximaNovaBold';
+  font-size: 19px;
+  letter-spacing: normal;
+  line-height: 1.3em;
+  color: #53251B;
+}
+@media screen and (min-width: 41.45454545454545em) {
+  table caption {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  table caption {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 64em) {
+  table caption {
+    font-size: 25px;
+  }
+}
+table tr {
+  min-height: 50px;
+  width: 100%;
+  border-top: 1px solid #A3897A;
+  background-size: 100%;
+  background-position-x: -2px;
+}
+@media screen and (min-width: 48em) {
+  table tr {
+    background: top left no-repeat url(../images/line_normal.svg);
+    background-size: 100%;
+    background-position-x: -4px;
+    border-top: none;
+  }
+}
+table tr td {
+  padding: 14px 0 7px;
+  vertical-align: top;
+}
+table tr td img {
+  margin-left: 0;
+  max-width: 150px;
+  mix-blend-mode: multiply;
 }
 /*
  *  Node / block webform component
@@ -10806,14 +10869,12 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
   width: 100%;
   height: 20px;
   background: center left no-repeat url(../images/line_mobile.svg);
-  background-size: 100% 100%;
-  background-position-x: -2px;
+  margin-left: -4px;
 }
 @media screen and (min-width: 64em) {
   .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan > .field--name-field-titel:after {
     background: center left no-repeat url(../images/line_normal.svg);
-    background-size: 100% 100%;
-    background-position-x: -4px;
+    margin-left: -8px;
   }
 }
 .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion {
@@ -10838,7 +10899,6 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
     width: auto;
   }
 }
-.page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
 .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
   padding-bottom: 0px;
   font-family: 'ProximaNovaRegular', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10852,39 +10912,38 @@ body.page-node-type-webform .container .row .layout .layout__region--content .fi
   font-family: 'ProximaNovaBold';
 }
 @media screen and (min-width: 48em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
   .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
   .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 80em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
   .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 42.35294117647059em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
   .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
   .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 64em) {
-  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-titel,
   .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title {
     font-size: 19px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-linked-title a:hover {
+    color: #A3897A;
   }
 }
 .page-node-type-trainingszeiten .layout__region--content > .field--type-entity-reference-revisions .paragraph--type--tag-plan .field--name-field-lektionen .paragraph--type--lektion .col-right .field--name-field-body p:last-child {
@@ -11257,8 +11316,8 @@ form#user-login {
   margin: 0;
 }
 #user_login_form_form .form-actions-wrapper .form-actions .btn {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 12.5px;
   margin-right: 12.5px;
   padding: 10px 40px;
@@ -11279,32 +11338,32 @@ form#user-login {
 }
 @media screen and (min-width: 48em) {
   #user_login_form_form .form-actions-wrapper .form-actions .btn {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   #user_login_form_form .form-actions-wrapper .form-actions .btn {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   #user_login_form_form .form-actions-wrapper .form-actions .btn {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 48em) {
   #user_login_form_form .form-actions-wrapper .form-actions .btn {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   #user_login_form_form .form-actions-wrapper .form-actions .btn {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   #user_login_form_form .form-actions-wrapper .form-actions .btn {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 40em) {
@@ -11809,8 +11868,8 @@ form#user-login {
 }
 #user-register-form .form-actions .btn,
 #user-pass .form-actions .btn {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 12.5px;
   margin-right: 12.5px;
   padding: 10px 40px;
@@ -11833,37 +11892,37 @@ form#user-login {
 @media screen and (min-width: 48em) {
   #user-register-form .form-actions .btn,
   #user-pass .form-actions .btn {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   #user-register-form .form-actions .btn,
   #user-pass .form-actions .btn {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   #user-register-form .form-actions .btn,
   #user-pass .form-actions .btn {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 48em) {
   #user-register-form .form-actions .btn,
   #user-pass .form-actions .btn {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   #user-register-form .form-actions .btn,
   #user-pass .form-actions .btn {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   #user-register-form .form-actions .btn,
   #user-pass .form-actions .btn {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 40em) {
@@ -12897,8 +12956,8 @@ form#user-profile-form div .form-actions .form-submit .icon {
 @media screen and (min-width: 64em) {
 }
 .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 12.5px;
   margin-right: 12.5px;
   padding: 10px 40px;
@@ -12919,32 +12978,32 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 48em) {
   .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 48em) {
   .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   .view-angebot .row .col .layout .layout__region--content .field--name-node-title h2 a {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 40em) {
@@ -12971,16 +13030,18 @@ form#user-profile-form div .form-actions .form-submit .icon {
   }
 }
 .view-angebot .row .col .layout .layout__region--content .field--name-field-thumbnail img {
-  -webkit-transition: filter 0.5s ease;
-  -o-transition: filter 0.5s ease;
-  transition: filter 0.5s ease;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  filter: grayscale(1);
 }
 @media screen and (min-width: 64em) {
   .view-angebot .row .col .layout .layout__region--content:hover .field--name-node-title a {
     background-color: #D40028;
+  }
+  .view-angebot .row .col .layout .layout__region--content:hover .field--name-field-thumbnail {
+    -webkit-transition: filter 0.5s ease;
+    -o-transition: filter 0.5s ease;
+    transition: filter 0.5s ease;
   }
   .view-angebot .row .col .layout .layout__region--content:hover .field--name-field-thumbnail img {
     -webkit-filter: none;
@@ -13184,6 +13245,8 @@ form#user-profile-form div .form-actions .form-submit .icon {
   margin-left: auto;
   margin-right: auto;
   max-width: 970px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #block-views-block-aktuell-block-1 {
   margin: 120px 0 0 0;
@@ -13407,8 +13470,8 @@ form.webform-submission-form .form-actions {
   text-align: center;
 }
 form.webform-submission-form .form-actions button.webform-button--submit {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 12.5px;
   margin-right: 12.5px;
   padding: 10px 40px;
@@ -13430,32 +13493,32 @@ form.webform-submission-form .form-actions button.webform-button--submit {
 }
 @media screen and (min-width: 48em) {
   form.webform-submission-form .form-actions button.webform-button--submit {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   form.webform-submission-form .form-actions button.webform-button--submit {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   form.webform-submission-form .form-actions button.webform-button--submit {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 48em) {
   form.webform-submission-form .form-actions button.webform-button--submit {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   form.webform-submission-form .form-actions button.webform-button--submit {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   form.webform-submission-form .form-actions button.webform-button--submit {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 40em) {
@@ -13790,8 +13853,8 @@ form.webform-submission-form .webform-component .form-checkboxes .checkbox > lab
  *  Buttons component
  * --------------------------------------------------*/
 .btn {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 12.5px;
   margin-right: 12.5px;
   padding: 10px 40px;
@@ -13812,32 +13875,32 @@ form.webform-submission-form .webform-component .form-checkboxes .checkbox > lab
 }
 @media screen and (min-width: 48em) {
   .btn {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   .btn {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   .btn {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 48em) {
   .btn {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 64em) {
   .btn {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 80em) {
   .btn {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 40em) {
@@ -14178,6 +14241,7 @@ header#navbar .header-background {
   z-index: 101;
   background-color: black;
   height: 100vw;
+  max-height: 100vh;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
@@ -14289,6 +14353,9 @@ body.path-frontpage header#navbar .header-background,
 body.page-node-2 header#navbar .header-background,
 body.page-node-3 header#navbar .header-background,
 body.page-node-4 header#navbar .header-background,
+body.page-node-13 header#navbar .header-background,
+body.page-node-19 header#navbar .header-background,
+body.page-node-21 header#navbar .header-background,
 body.page-node-22 header#navbar .header-background {
   position: relative;
   overflow: hidden;
@@ -14299,6 +14366,9 @@ body.page-node-22 header#navbar .header-background {
   body.page-node-2 header#navbar .header-background,
   body.page-node-3 header#navbar .header-background,
   body.page-node-4 header#navbar .header-background,
+  body.page-node-13 header#navbar .header-background,
+  body.page-node-19 header#navbar .header-background,
+  body.page-node-21 header#navbar .header-background,
   body.page-node-22 header#navbar .header-background {
     height: 90vh;
     max-height: 800px;

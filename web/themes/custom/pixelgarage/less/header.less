@@ -356,6 +356,7 @@ header#navbar {
     z-index: 101;
     background-color: black;
     height: 100vw;
+    max-height: 100vh;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
@@ -436,7 +437,6 @@ header#navbar {
         #pxl-mixins.center-horizontally();
 
         @media @tablet {
-
           width: 100%;
 
         }
@@ -460,6 +460,9 @@ body {
   &.page-node-2,
   &.page-node-3,
   &.page-node-4,
+  &.page-node-13,
+  &.page-node-19,
+  &.page-node-21,
   &.page-node-22{
     header#navbar {
       .header-background {

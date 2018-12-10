@@ -12,8 +12,8 @@ dependencies:
   - path
   - views
 
-# Information added by Drupal.org packaging script on 2018-10-30
-version: '8.x-1.4'
+# Information added by Drupal.org packaging script on 2018-12-07
+version: '8.x-1.5'
 core: '8.x'
 project: 'yoast_seo'
-datestamp: 1540886286
+datestamp: 1544198294

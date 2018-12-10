@@ -46,13 +46,12 @@
       }
      .field--name-field-thumbnail {
       img {
-       #pxl-mixins.transition(filter 0.5s ease);
-       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-       filter: grayscale(100%);
+       -webkit-filter: grayscale(1); /* Safari 6.0 - 9.0 */
+       filter: grayscale(1);
       }
      }
-     @media @normal {
 
+    @media @normal {
       &:hover {
        .field--name-node-title {
         a {
@@ -60,6 +59,8 @@
         }
        }
        .field--name-field-thumbnail {
+        #pxl-mixins.transition(filter 0.5s ease);
+
         // Make image black-white on hover
          img {
           -webkit-filter: none;

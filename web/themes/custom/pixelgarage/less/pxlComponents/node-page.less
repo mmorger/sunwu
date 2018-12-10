@@ -66,31 +66,9 @@
                   //max-width: 60%;
                 }
               }
-              // Tables
-              table {
-                //#pxl-mixins.resp-margin-bottom(75px);
-                width: 100%;
-                tr {
-                  min-height: 50px;
-                  width: 100%;
-                  background: top left no-repeat url(../images/line_mobile.svg);
-                  background-size: 100%;
-                  background-position-x: -2px;
-                  @media @tablet {
-                    background: top left no-repeat url(../images/line_normal.svg);
-                    background-size: 100%;
-                    background-position-x: -13px;
-                  }
-                  td {
-                    padding: 14px 0 7px;
-                    vertical-align: top;
-
-                    img {
-                      margin-left: 0;
-                      max-width: 150px;
-                      mix-blend-mode: multiply;
-                    }
-                  }
+              ul {
+                li {
+                  #pxl-mixins.resp-padding-bottom(8px);
                 }
               }
             }
@@ -103,16 +81,40 @@
     }
   }
 }
-//.page-node-17 {
-//  .container {
-//    .row {
-//      .region-content {
-//        >.layout {
-//          //#pxl-mixins.default-padding();
-//          //#pxl-mixins.inner-container();
-//          #pxl-mixins.resp-margin-bottom(0px);
-//        }
-//      }
-//    }
-//  }
-//}
+// Tables
+table {
+  width: 100%;
+
+  caption {
+    font-family: @pxl-text-font-bold;
+    #pxl-mixins.font-size-responsive(@resp-lead-size-max, @resp-lead-size-med, @resp-lead-size-min);
+    letter-spacing: @text-letter-spacing;
+    line-height: @text-line-height;
+    color: @title-color;
+  }
+  tr {
+    min-height: 50px;
+    width: 100%;
+    border-top: 1px solid @pxl-color-brown;
+    //background: top left no-repeat url(../images/line_mobile.svg);
+    background-size: 100%;
+    background-position-x: -2px;
+
+    @media @tablet {
+      background: top left no-repeat url(../images/line_normal.svg);
+      background-size: 100%;
+      background-position-x: -4px;
+      border-top: none;
+    }
+    td {
+      padding: 14px 0 7px;
+      vertical-align: top;
+
+      img {
+        margin-left: 0;
+        max-width: 150px;
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}

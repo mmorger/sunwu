@@ -30,7 +30,7 @@
 
       $(window).on("load", function () {
         if ($(window).scrollTop() >= fixedHeaderScrollPos) {
-          $("header.navbar").addClass('nav-solid');
+          $("header.navbar .navbar-header").addClass('nav-solid');
         }
       });
 

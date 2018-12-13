@@ -10170,6 +10170,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     font-size: 45px;
   }
 }
+.paragraph:not(.paragraph--type--tag-plan) .field--name-field-body p a {
+  color: #D40028;
+}
 .paragraph:not(.paragraph--type--tag-plan) .field--name-field-body p:last-child {
   margin-bottom: 50px;
 }
@@ -10532,7 +10535,7 @@ table tr td {
   vertical-align: top;
 }
 table tr td .img-responsive {
-  margin-left: 0;
+  margin-left: 0 !important;
   max-width: 150px;
   mix-blend-mode: multiply;
 }

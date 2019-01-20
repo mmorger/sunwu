@@ -28,4 +28,4 @@
 /.env
 
 # Ignore the sites directory
-/web/sites
+/web/sites/

@@ -57,6 +57,11 @@
     a {
      color: @pxl-color-dark-red;
      text-transform: uppercase;
+     @media @normal {
+      &:hover {
+       color: @pxl-color-active;
+     }
+    }
     }
    }
   }

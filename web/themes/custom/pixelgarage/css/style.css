@@ -10630,6 +10630,9 @@ table tr td .img-responsive {
   max-width: 150px;
   mix-blend-mode: multiply;
 }
+table a {
+  color: #D40028;
+}
 /*
  *  Node / block webform component
  * --------------------------------------------------*/

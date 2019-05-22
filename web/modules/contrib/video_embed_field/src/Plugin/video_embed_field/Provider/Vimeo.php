@@ -17,17 +17,13 @@ class Vimeo extends ProviderPluginBase {
   /**
    * {@inheritdoc}
    */
-  public function renderEmbedCode($width, $height, $autoplay, $showinfo, $controls, $modestbranding) {
+  public function renderEmbedCode($width, $height, $autoplay) {
     $iframe = [
       '#type' => 'video_embed_iframe',
       '#provider' => 'vimeo',
       '#url' => sprintf('https://player.vimeo.com/video/%s', $this->getVideoId()),
       '#query' => [
         'autoplay' => $autoplay,
-        'title' => $showinfo,
-        'byline' => $showinfo,
-        'controls' => $controls,
-        'modestbranding' => $modestbranding,
       ],
       '#attributes' => [
         'width' => $width,

@@ -1,11 +1,12 @@
 <?php
 
 namespace Drupal\video_embed_field;
+use Drupal\Component\Plugin\PluginInspectionInterface;
 
 /**
  * Providers an interface for embed providers.
  */
-interface ProviderPluginInterface {
+interface ProviderPluginInterface extends PluginInspectionInterface {
 
   /**
    * Check if the plugin is applicable to the user input.
@@ -75,7 +76,7 @@ interface ProviderPluginInterface {
    * @return mixed
    *   A renderable array of the embed code.
    */
-  public function renderEmbedCode($width, $height, $autoplay, $showinfo, $controls, $modestbranding);
+  public function renderEmbedCode($width, $height, $autoplay);
 
   /**
    * Get the ID of the video from user input.

@@ -2,6 +2,7 @@
 
 namespace Drupal\video_embed_field\Plugin\Field\FieldFormatter;
 
+use Drupal\Component\Utility\Html;
 use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
@@ -97,20 +98,19 @@ class Video extends FormatterBase implements ContainerFactoryPluginInterface {
       }
       else {
         $autoplay = $this->currentUser->hasPermission('never autoplay videos') ? FALSE : $this->getSetting('autoplay');
-        $showinfo = $this->getSetting('showinfo');
-        $modestbranding = $this->getSetting('modestbranding');
-        $controls = $this->getSetting('controls');
-        $element[$delta] = $provider->renderEmbedCode($this->getSetting('width'), $this->getSetting('height'), $autoplay, $showinfo, $controls, $modestbranding);
+        $element[$delta] = $provider->renderEmbedCode($this->getSetting('width'), $this->getSetting('height'), $autoplay);
         $element[$delta]['#cache']['contexts'][] = 'user.permissions';
+
+        $element[$delta] = [
+          '#type' => 'container',
+          '#attributes' => ['class' => [Html::cleanCssIdentifier(sprintf('video-embed-field-provider-%s', $provider->getPluginId()))]],
+          'children' => $element[$delta],
+        ];
 
         // For responsive videos, wrap each field item in it's own container.
         if ($this->getSetting('responsive')) {
-          $element[$delta] = [
-            '#type' => 'container',
-            '#attached' => ['library' => ['video_embed_field/responsive-video']],
-            '#attributes' => ['class' => ['video-embed-field-responsive-video']],
-            'children' => $element[$delta],
-          ];
+          $element[$delta]['#attached']['library'][] = 'video_embed_field/responsive-video';
+          $element[$delta]['#attributes']['class'][] = 'video-embed-field-responsive-video';
         }
       }
 
@@ -127,9 +127,6 @@ class Video extends FormatterBase implements ContainerFactoryPluginInterface {
       'width' => '854',
       'height' => '480',
       'autoplay' => TRUE,
-      'showinfo' => TRUE,
-      'controls' => TRUE,
-      'modestbranding' => FALSE,
     ];
   }
 
@@ -143,24 +140,6 @@ class Video extends FormatterBase implements ContainerFactoryPluginInterface {
       '#type' => 'checkbox',
       '#description' => $this->t('Autoplay the videos for users without the "never autoplay videos" permission. Roles with this permission will bypass this setting.'),
       '#default_value' => $this->getSetting('autoplay'),
-    ];
-    $elements['showinfo'] = [
-      '#title' => $this->t('Show Info'),
-      '#type' => 'checkbox',
-      '#description' => $this->t('Display Video Title and uploader information.'),
-      '#default_value' => $this->getSetting('showinfo'),
-    ];
-    $elements['controls'] = [
-      '#title' => $this->t('Controls'),
-      '#type' => 'checkbox',
-      '#description' => $this->t('Enable the Controls from the player.'),
-      '#default_value' => $this->getSetting('controls'),
-    ];
-    $elements['modestbranding'] = [
-      '#title' => $this->t('Modest Branding'),
-      '#type' => 'checkbox',
-      '#description' => $this->t('This will hide the video provider logo from the player.'),
-      '#default_value' => $this->getSetting('modestbranding'),
     ];
     $elements['responsive'] = [
       '#title' => $this->t('Responsive Video'),
@@ -203,12 +182,9 @@ class Video extends FormatterBase implements ContainerFactoryPluginInterface {
    */
   public function settingsSummary() {
     $dimensions = $this->getSetting('responsive') ? $this->t('Responsive') : $this->t('@widthx@height', ['@width' => $this->getSetting('width'), '@height' => $this->getSetting('height')]);
-    $summary[] = $this->t('Embedded Video (@dimensions@autoplay@showinfo@controls@modestbranding).', [
+    $summary[] = $this->t('Embedded Video (@dimensions@autoplay).', [
       '@dimensions' => $dimensions,
       '@autoplay' => $this->getSetting('autoplay') ? $this->t(', autoplaying') : '',
-      '@showinfo' => $this->getSetting('showinfo') ? $this->t(', showinfo') : '',
-      '@controls' => $this->getSetting('controls') ? $this->t(', controls') : '',
-      '@modestbranding' => $this->getSetting('modestbranding') ? $this->t(', modestbranding') : '',
     ]);
     return $summary;
   }

@@ -17,7 +17,7 @@ class YouTubePlaylist extends ProviderPluginBase {
   /**
    * {@inheritdoc}
    */
-  public function renderEmbedCode($width, $height, $autoplay, $showinfo, $controls, $modestbranding) {
+  public function renderEmbedCode($width, $height, $autoplay) {
     return [
       '#type' => 'video_embed_iframe',
       '#provider' => 'youtube_playlist',
